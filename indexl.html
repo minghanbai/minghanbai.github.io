@@ -1,9 +1,59 @@
 <!DOCTYPE html>
-<html lang="zh-TW">
+<html lang="zh-TW" prefix="og: https://ogp.me/ns#">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MingHan Bai | Portfolio</title>
+    
+    <!-- =========================================================================
+       防誤判與身分驗證區塊 (Anti-Phishing & SEO Tags)
+    ========================================================================== -->
+    <title>MingHan Bai | 博士生與前端開發者作品集 (Portfolio)</title>
+    <meta name="description" content="MingHan Bai 的個人作品集。我是博士生與開發者，專注於開發隱私優先、純前端 (Pure Frontend) 與離線可用的 Web 工具，如小冊子拼版工具與學術職缺觀測站。">
+    <meta name="author" content="MingHan Bai">
+    <meta name="keywords" content="MingHan Bai, 博士生, 前端開發, 開源專案, PDF工具, 台灣學術職缺, 離線工具">
+    <meta name="robots" content="index, follow">
+
+    <!-- 規範網址 -->
+    <link rel="canonical" href="https://minghanbai.github.io/">
+
+    <!-- Open Graph 標籤 -->
+    <meta property="og:title" content="MingHan Bai | Personal Portfolio">
+    <meta property="og:description" content="博士生與開發者。專注於隱私優先、離線可用的 Web 工具開發。">
+    <meta property="og:type" content="profile">
+    <meta property="og:url" content="https://minghanbai.github.io/">
+    <meta property="og:site_name" content="MingHan Bai's Portfolio">
+    <meta property="profile:username" content="minghanbai">
+
+    <!-- Google 驗證 -->
+    <meta name="google-site-verification" content="google67e738623d8378ad" />
+
+    <!-- 結構化資料 (JSON-LD) -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfilePage",
+      "mainEntity": {
+        "@type": "Person",
+        "name": "MingHan Bai",
+        "alternateName": "minghanbai",
+        "description": "Doctoral student and developer focusing on privacy-first, offline-first web tools.",
+        "url": "https://minghanbai.github.io",
+        "image": "https://github.com/minghanbai.png",
+        "sameAs": [
+          "https://github.com/minghanbai"
+        ],
+        "jobTitle": "Doctoral Student",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Academia"
+        }
+      }
+    }
+    </script>
+    
+    <!-- =========================================================================
+       樣式與腳本引入
+    ========================================================================== -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
@@ -12,30 +62,33 @@
         .project-card:hover { transform: translateY(-5px); }
     </style>
 </head>
+
 <body class="text-slate-800 flex flex-col min-h-screen">
 
+    <!-- Hero 區域 -->
     <header class="bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
             <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-tr from-blue-500 to-teal-400">
-                <div class="bg-white rounded-full p-4 w-24 h-24 flex items-center justify-center text-4xl text-slate-700 font-bold">
-                    MB
-                </div>
+                <img src="https://github.com/minghanbai.png" alt="MingHan Bai" class="bg-white rounded-full p-1 w-24 h-24 object-cover shadow-sm">
             </div>
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
                 Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">MingHan Bai</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed">
+            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
                 我是博士生，也是一名開發者。專注於構建 <strong>純前端 (Pure Frontend)</strong>、<strong>注重隱私</strong> 且 <strong>離線可用</strong> 的 Web 工具，致力於用程式碼解決學術研究與行政工作中的實際痛點。
             </p>
             
-            <div class="mt-8 flex justify-center gap-4">
-                <a href="https://github.com/minghanbai" target="_blank" class="flex items-center gap-2 px-5 py-2.5 bg-slate-900 text-white rounded-lg hover:bg-slate-700 transition font-medium">
-                    <i class="fa-brands fa-github"></i> GitHub Profile
+            <!-- 上方主要入口 -->
+            <div class="flex justify-center gap-4">
+                <a href="https://github.com/minghanbai" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2 px-6 py-3 bg-slate-900 text-white rounded-lg hover:bg-slate-700 transition font-medium shadow-lg hover:shadow-xl transform hover:-translate-y-0.5 duration-200">
+                    <i class="fa-brands fa-github text-xl"></i> 
+                    <span>前往 GitHub 個人首頁</span>
                 </a>
             </div>
         </div>
     </header>
 
+    <!-- 專案展示區域 -->
     <main class="flex-grow bg-slate-50 py-16 px-6">
         <div class="max-w-6xl mx-auto">
             <div class="flex items-center gap-3 mb-10">
@@ -45,6 +98,7 @@
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
 
+                <!-- 專案 1: Academic Radar -->
                 <div class="project-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col">
                     <div class="p-8 flex-grow">
                         <div class="w-12 h-12 bg-blue-100 text-blue-600 rounded-xl flex items-center justify-center text-2xl mb-6">
@@ -61,15 +115,16 @@
                         </div>
                     </div>
                     <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex gap-4">
-                        <a href="https://minghanbai.github.io/academic-radar-tw/" target="_blank" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
+                        <a href="https://minghanbai.github.io/academic-radar-tw/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
                             <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
                         </a>
-                        <a href="https://github.com/minghanbai/academic-radar-tw" target="_blank" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
+                        <a href="https://github.com/minghanbai/academic-radar-tw" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
                             <i class="fa-brands fa-github mr-1"></i> Source
                         </a>
                     </div>
                 </div>
 
+                <!-- 專案 2: Booklet Converter -->
                 <div class="project-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col">
                     <div class="p-8 flex-grow">
                         <div class="w-12 h-12 bg-orange-100 text-orange-600 rounded-xl flex items-center justify-center text-2xl mb-6">
@@ -86,15 +141,16 @@
                         </div>
                     </div>
                     <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex gap-4">
-                        <a href="https://minghanbai.github.io/BookletConverter/" target="_blank" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
+                        <a href="https://minghanbai.github.io/BookletConverter/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
                             <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
                         </a>
-                        <a href="https://github.com/minghanbai/BookletConverter" target="_blank" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
+                        <a href="https://github.com/minghanbai/BookletConverter" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
                             <i class="fa-brands fa-github mr-1"></i> Source
                         </a>
                     </div>
                 </div>
 
+                <!-- 專案 3: PurePDF -->
                 <div class="project-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col">
                     <div class="p-8 flex-grow">
                         <div class="w-12 h-12 bg-indigo-100 text-indigo-600 rounded-xl flex items-center justify-center text-2xl mb-6">
@@ -111,15 +167,16 @@
                         </div>
                     </div>
                     <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex gap-4">
-                        <a href="https://minghanbai.github.io/PurePDF/" target="_blank" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
+                        <a href="https://minghanbai.github.io/PurePDF/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
                             <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
                         </a>
-                        <a href="https://github.com/minghanbai/PurePDF" target="_blank" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
+                        <a href="https://github.com/minghanbai/PurePDF" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
                             <i class="fa-brands fa-github mr-1"></i> Source
                         </a>
                     </div>
                 </div>
 
+                <!-- 專案 4: Postal Bulk Remit -->
                 <div class="project-card bg-white rounded-2xl shadow-sm border border-slate-200 overflow-hidden transition-all duration-300 hover:shadow-lg flex flex-col">
                     <div class="p-8 flex-grow">
                         <div class="w-12 h-12 bg-green-100 text-green-600 rounded-xl flex items-center justify-center text-2xl mb-6">
@@ -136,10 +193,10 @@
                         </div>
                     </div>
                     <div class="px-8 py-4 bg-slate-50 border-t border-slate-100 flex gap-4">
-                        <a href="https://minghanbai.github.io/postal-bulk-remit/" target="_blank" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
+                        <a href="https://minghanbai.github.io/postal-bulk-remit/" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition font-medium text-sm">
                             <i class="fa-solid fa-arrow-up-right-from-square mr-1"></i> Live Demo
                         </a>
-                        <a href="https://github.com/minghanbai/postal-bulk-remit" target="_blank" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
+                        <a href="https://github.com/minghanbai/postal-bulk-remit" target="_blank" rel="noopener noreferrer" class="flex-1 text-center py-2 bg-white border border-slate-300 text-slate-700 rounded-lg hover:bg-slate-50 transition font-medium text-sm">
                             <i class="fa-brands fa-github mr-1"></i> Source
                         </a>
                     </div>
@@ -149,16 +206,31 @@
         </div>
     </main>
 
-    <footer class="bg-white border-t border-slate-200 py-10 text-center">
+    <!-- [NEW] GitHub CTA 區塊 -->
+    <section class="bg-slate-900 py-16 text-center text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <h2 class="text-3xl font-bold mb-4">探索更多開源專案</h2>
+            <p class="text-slate-300 mb-8 text-lg">
+                我在 GitHub 上還有其他實驗性專案與程式碼庫。歡迎訪問我的個人頁面，查看更多細節或發起協作。
+            </p>
+            <a href="https://github.com/minghanbai" target="_blank" rel="noopener noreferrer" class="inline-flex items-center gap-3 px-8 py-4 bg-blue-600 hover:bg-blue-500 text-white rounded-full font-bold text-lg transition-all transform hover:scale-105 shadow-lg shadow-blue-500/30">
+                <i class="fa-brands fa-github text-xl"></i>
+                前往 GitHub 個人首頁
+            </a>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-slate-50 border-t border-slate-200 py-10 text-center">
         <div class="max-w-4xl mx-auto px-4">
             <p class="text-slate-500 text-sm mb-4">
                 &copy; <script>document.write(new Date().getFullYear())</script> MingHan Bai. All rights reserved.
             </p>
             <div class="flex justify-center gap-6 text-slate-400">
-                <a href="https://github.com/minghanbai" class="hover:text-slate-800 transition text-2xl">
+                <a href="https://github.com/minghanbai" class="hover:text-slate-800 transition text-2xl" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
                     <i class="fa-brands fa-github"></i>
                 </a>
-                </div>
+            </div>
         </div>
     </footer>
 
