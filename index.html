@@ -6,23 +6,22 @@
     
     <!-- =========================================================================
        防誤判與身分驗證區塊 (Anti-Phishing & SEO Tags)
-       這些標籤能幫助爬蟲理解這是正當的個人首頁，降低被標記為釣魚的風險。
     ========================================================================== -->
-    <title>MingHan Bai | 博士生與前端開發者作品集 (Portfolio)</title>
+    <title>MingHan Bai | 設計博士與前端開發者作品集 (Portfolio)</title>
     
-    <!-- 1. 網站基本資訊：清楚描述網站用途，避免使用模糊字眼 -->
-    <meta name="description" content="MingHan Bai 的個人作品集。我是博士生與開發者，專注於開發隱私優先、純前端 (Client-side Only) 與離線可用的 Web 工具，如小冊子拼版工具與學術職缺觀測站。本站不收集任何使用者個資。">
+    <!-- 1. 網站基本資訊：更新為設計博士與工作室負責人 -->
+    <meta name="description" content="MingHan Bai 的個人作品集。我是設計博士 (Design PhD) 與魔翼工作室負責人，專長為遊戲與互動設計。專注於開發隱私優先、純前端 (Client-side Only) 與離線可用的 Web 工具。">
     <meta name="author" content="MingHan Bai">
-    <meta name="keywords" content="MingHan Bai, 博士生, 前端開發, 開源專案, PDF工具, 台灣學術職缺, 離線工具, 純前端, Static Site">
+    <meta name="keywords" content="MingHan Bai, 設計博士, Design PhD, 遊戲設計, 互動設計, 前端開發, 魔翼工作室, 開源專案, 台灣學術職缺, 純前端">
     <meta name="robots" content="index, follow">
 
-    <!-- 2. 規範網址 (Canonical URL)：防止因為參數不同被誤判為重複或惡意頁面 -->
+    <!-- 2. 規範網址 -->
     <link rel="canonical" href="https://minghanbai.github.io/">
 
-    <!-- 3. Open Graph 標籤：讓社交媒體和爬蟲知道這是一個「人物簡介」而非「文章」或「商品」 -->
-    <meta property="og:title" content="MingHan Bai | Personal Portfolio">
-    <meta property="og:description" content="博士生與開發者。專注於隱私優先、離線可用的 Web 工具開發。">
-    <meta property="og:type" content="profile"> <!-- 關鍵：告訴爬蟲這是個人檔案 -->
+    <!-- 3. Open Graph 標籤 -->
+    <meta property="og:title" content="MingHan Bai | Design PhD & Developer">
+    <meta property="og:description" content="設計博士、魔翼工作室負責人。專注於遊戲設計、互動設計與隱私優先的 Web 工具開發。">
+    <meta property="og:type" content="profile">
     <meta property="og:url" content="https://minghanbai.github.io/">
     <meta property="og:site_name" content="MingHan Bai's Portfolio">
     <meta property="profile:username" content="minghanbai">
@@ -31,7 +30,7 @@
     <!-- 4. Google 網站驗證 -->
     <meta name="google-site-verification" content="google67e738623d8378ad" />
 
-    <!-- 5. 結構化資料 (JSON-LD)：這是給 Google AI 看的「數位名片」，最強力的身分證明 -->
+    <!-- 5. 結構化資料 (JSON-LD)：更新職稱 -->
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -40,16 +39,20 @@
         "@type": "Person",
         "name": "MingHan Bai",
         "alternateName": "minghanbai",
-        "description": "Doctoral student and developer focusing on privacy-first, offline-first web tools.",
+        "description": "Design PhD and Founder of Magic Wing Studio. Focusing on Game Design, Interactive Design, and privacy-first web tools.",
         "url": "https://minghanbai.github.io",
         "image": "https://github.com/minghanbai.png",
         "sameAs": [
           "https://github.com/minghanbai"
         ],
-        "jobTitle": "Doctoral Student",
+        "jobTitle": "Design PhD & Founder",
         "worksFor": {
           "@type": "Organization",
-          "name": "Academia"
+          "name": "Magic Wing Studio"
+        },
+        "alumniOf": {
+          "@type": "CollegeOrUniversity",
+          "name": "National Yunlin University of Science and Technology"
         }
       }
     }
@@ -73,14 +76,16 @@
     <header class="bg-white border-b border-slate-200">
         <div class="max-w-5xl mx-auto px-6 py-16 md:py-24 text-center">
             <div class="mb-6 inline-block p-1 rounded-full bg-gradient-to-tr from-blue-500 to-teal-400">
-                <!-- 直接使用 GitHub 頭貼，增加真實性 -->
+                <!-- 直接使用 GitHub 頭貼 -->
                 <img src="https://github.com/minghanbai.png" alt="MingHan Bai" class="bg-white rounded-full p-1 w-24 h-24 object-cover shadow-sm">
             </div>
             <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-4 tracking-tight">
                 Hi, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">MingHan Bai</span>
             </h1>
-            <p class="text-lg md:text-xl text-slate-600 max-w-2xl mx-auto leading-relaxed mb-8">
-                我是博士生，也是一名開發者。專注於構建 <strong>純前端 (Client-side Only)</strong>、<strong>注重隱私</strong> 且 <strong>離線可用</strong> 的 Web 工具，致力於用程式碼解決學術研究與行政工作中的實際痛點。
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-8">
+                我是 <strong>設計博士 (Design PhD)</strong>，也是 <strong>魔翼工作室</strong> 的負責人。
+                <br class="hidden md:block" />
+                專長於遊戲與互動設計，並致力於構建 <strong>純前端 (Client-side Only)</strong>、<strong>注重隱私</strong> 且 <strong>離線可用</strong> 的 Web 工具，用程式碼解決研究與實務中的痛點。
             </p>
             
             <!-- 上方主要入口 -->
@@ -98,7 +103,7 @@
         <div class="max-w-6xl mx-auto">
             <div class="flex items-center gap-3 mb-10">
                 <div class="h-8 w-1.5 bg-blue-600 rounded-full"></div>
-                <h2 class="text-2xl font-bold text-slate-800">精選專案 (Featured Projects)</h2>
+                <h2 class="text-2xl font-bold text-slate-800">精選工具專案 (Featured Tools)</h2>
             </div>
 
             <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8">
