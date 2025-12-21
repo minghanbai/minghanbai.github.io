@@ -1,8 +1,8 @@
 # Hi there, I'm MingHan Bai 👋
 
-我是博士生，同時也是一名熱愛開發實用工具的開發者。我專注於構建**純前端**、**注重隱私**且**離線可用**的 Web 應用程式，致力於解決學術研究與行政工作中的實際問題。
+我是設計博士 (Design PhD) 與魔翼工作室負責人，同時也是一名熱愛開發實用工具的開發者。我專注於構建**純前端**、**注重隱私**且**離線可用**的 Web 應用程式，致力於解決學術研究與行政工作中的實際問題。我的專長領域包含遊戲設計 (Game Design) 與互動設計 (Interactive Design)。
 
-I am a doctoral student and a developer who loves building practical tools. I focus on creating **pure frontend**, **privacy-focused**, and **offline-first** web applications to solve real-world problems in academic research and administrative work.
+I am a Design PhD and Founder of Magic Wing Studio, as well as a developer who loves building practical tools. My expertise lies in Game Design and Interactive Design. I focus on creating **pure frontend**, **privacy-focused**, and **offline-first** web applications to solve real-world problems in academic research and administrative work.
 
 ---
 
