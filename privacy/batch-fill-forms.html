@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Batch-Fill-Forms 自動批次填報助手 | 隱私權政策與說明</title>
+    
+    <!-- =========================================================================
+       樣式與腳本引入
+    ========================================================================== -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@300;400;500;700&family=Inter:wght@400;600;800&display=swap');
+        body { font-family: 'Inter', 'Noto Sans TC', sans-serif; background-color: #f8fafc; }
+        .feature-card:hover { transform: translateY(-5px); }
+    </style>
+</head>
+
+<body class="text-slate-800 flex flex-col min-h-screen">
+
+    <!-- Header / Navigation -->
+    <header class="bg-white border-b border-slate-200 sticky top-0 z-10">
+        <div class="max-w-5xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="index.html" class="flex items-center gap-2 text-slate-500 hover:text-blue-600 transition font-medium">
+                <i class="fa-solid fa-arrow-left"></i> 回首頁
+            </a>
+            <div class="font-bold text-slate-800 tracking-tight">Batch-Fill-Forms</div>
+        </div>
+    </header>
+
+    <!-- Hero 區域 -->
+    <section class="bg-white border-b border-slate-200">
+        <div class="max-w-5xl mx-auto px-6 py-16 md:py-20 text-center">
+            <div class="mb-6 inline-flex p-4 rounded-3xl bg-blue-50 text-blue-600 text-5xl">
+                <i class="fa-solid fa-robot"></i>
+            </div>
+            <h1 class="text-4xl md:text-5xl font-extrabold text-slate-900 mb-6 tracking-tight">
+                Batch-Fill-Forms <br class="md:hidden" /><span class="text-transparent bg-clip-text bg-gradient-to-r from-blue-600 to-teal-500">自動批次填報助手</span>
+            </h1>
+            <p class="text-lg md:text-xl text-slate-600 max-w-3xl mx-auto leading-relaxed mb-6">
+                告別無止盡的複製貼上！最適合行政人員、公務體系與研究者的零門檻自動填表神器。
+            </p>
+            <p class="text-md text-slate-500 max-w-2xl mx-auto leading-relaxed">
+                面對上百筆 Excel 資料，卻只能一筆一筆手動點開網頁、新增、填寫、送出？<br>
+                這是一款完全在本地端運作的瀏覽器擴充功能，讓沒有任何程式背景的行政人員，也能輕鬆建立專屬的網頁 RPA（機器人流程自動化），將數小時的重複性勞動縮短為喝杯咖啡的時間。
+            </p>
+        </div>
+    </section>
+
+    <!-- 主要內容區域 -->
+    <main class="flex-grow bg-slate-50 py-16 px-6">
+        <div class="max-w-4xl mx-auto space-y-12">
+            
+            <!-- 為什麼你應該安裝這項商品？ -->
+            <section>
+                <div class="flex items-center gap-3 mb-8">
+                    <div class="h-8 w-1.5 bg-blue-600 rounded-full"></div>
+                    <h2 class="text-2xl font-bold text-slate-800">✨ 為什麼你應該安裝這項商品？</h2>
+                </div>
+                
+                <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all duration-300">
+                        <div class="text-blue-600 text-2xl mb-4"><i class="fa-solid fa-lock"></i></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">極致的資訊安全</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">專為高資安環境（如公家機關、企業內部系統）設計。所有 Excel/CSV 檔案解析與填寫過程，皆 <strong>100% 在您的瀏覽器本地端完成</strong>，絕不回傳任何資料至外部伺服器。</p>
+                    </div>
+                    
+                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all duration-300">
+                        <div class="text-teal-600 text-2xl mb-4"><i class="fa-solid fa-arrow-pointer"></i></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">視覺化「無程式碼」操作</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">不用看懂艱澀的 HTML 或 CSS！只需開啟「拾取模式」，在網頁上用滑鼠點擊想要填寫的輸入框或按鈕，系統就會自動為您精準定位。</p>
+                    </div>
+
+                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all duration-300">
+                        <div class="text-indigo-600 text-2xl mb-4"><i class="fa-solid fa-brain"></i></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">支援複雜的「非同步」表單流程</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">不只是單純填字！支援「點擊按鈕 ➡️ 等待彈出視窗 ➡️ 填寫資料 ➡️ 點擊完成」等多步驟動作。內建智慧等待機制，完美應對老舊、載入緩慢的公務系統。</p>
+                    </div>
+
+                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all duration-300">
+                        <div class="text-orange-600 text-2xl mb-4"><i class="fa-solid fa-shield-halved"></i></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">防呆機制與健康檢查</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">網站改版導致腳本失效？內建「測試配對」功能，執行前預先檢查所有網頁元件，若找不到對應欄位，會立刻引導您重新點選，告別程式中途崩潰的焦慮。</p>
+                    </div>
+                    
+                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all duration-300">
+                        <div class="text-purple-600 text-2xl mb-4"><i class="fa-solid fa-window-restore"></i></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">便利的浮動控制面板</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">在目標網頁上直接注入可拖曳的控制面板，您可以隨時監控批次進度、暫停、或進行單步執行測試。</p>
+                    </div>
+                    
+                    <div class="feature-card bg-white p-6 rounded-2xl shadow-sm border border-slate-200 transition-all duration-300">
+                        <div class="text-green-600 text-2xl mb-4"><i class="fa-solid fa-handshake-angle"></i></div>
+                        <h3 class="text-lg font-bold text-slate-900 mb-2">一人設定，全辦公室受惠</h3>
+                        <p class="text-slate-600 text-sm leading-relaxed">支援將配對好的流程規則「匯出/匯入」成設定檔。只要一位同仁設定好，即可分享給全體承辦人使用，達成無痛交接。</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 快速上手三步驟 -->
+            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-6"><i class="fa-solid fa-rocket text-blue-600 mr-2"></i> 快速上手三步驟</h2>
+                <div class="space-y-6">
+                    <div class="flex gap-4 items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">1</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-lg">載入資料</h4>
+                            <p class="text-slate-600 text-sm mt-1">上傳您的 .csv 或 .xlsx 資料檔。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">2</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-lg">視覺化配對</h4>
+                            <p class="text-slate-600 text-sm mt-1">透過側邊欄新增「填寫」或「點擊」動作，並使用滑鼠在網頁上點選對應的按鈕或輸入框。</p>
+                        </div>
+                    </div>
+                    <div class="flex gap-4 items-start">
+                        <div class="flex-shrink-0 w-8 h-8 bg-blue-100 text-blue-600 rounded-full flex items-center justify-center font-bold">3</div>
+                        <div>
+                            <h4 class="font-bold text-slate-900 text-lg">自動執行</h4>
+                            <p class="text-slate-600 text-sm mt-1">設定好每筆資料的間隔時間，按下啟動，看著網頁自動為您完成所有工作！</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- 開發背景與致謝 -->
+            <section class="bg-white p-8 rounded-2xl shadow-sm border border-slate-200">
+                <h2 class="text-2xl font-bold text-slate-800 mb-4"><i class="fa-solid fa-code text-slate-600 mr-2"></i> 開發背景與致謝</h2>
+                <p class="text-slate-600 text-sm leading-relaxed">
+                    本工具最初發想與落地測試於消防機關單位，特別感謝前輩們提供第一線的實務需求與寶貴回饋。現已將核心功能抽離，轉化為泛用型自動化工具，期能協助更多跨領域的行政工作者、研究人員大幅提升作業效率。
+                </p>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- 隱私權保證 CTA 區塊 -->
+    <section class="bg-slate-900 py-16 text-center text-white">
+        <div class="max-w-4xl mx-auto px-6">
+            <div class="text-5xl mb-6 text-teal-400"><i class="fa-solid fa-shield"></i></div>
+            <h2 class="text-3xl font-bold mb-6">隱私權保證 (Privacy Policy)</h2>
+            <div class="bg-slate-800/50 p-6 rounded-xl border border-slate-700 shadow-inner">
+                <p class="text-slate-300 text-lg max-w-2xl mx-auto leading-relaxed">
+                    本擴充功能<strong>不會收集、儲存或傳輸</strong>您的任何個人隱私、帳號密碼或業務資料。<br>
+                    所有的資料處理皆在您的本地瀏覽器中完成，確保最高層級的資料安全。
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- 頁尾 -->
+    <footer class="bg-slate-50 border-t border-slate-200 py-10 text-center">
+        <div class="max-w-4xl mx-auto px-4">
+            <p class="text-slate-500 text-sm mb-4">
+                &copy; <script>document.write(new Date().getFullYear())</script> MingHan Bai. All rights reserved.
+            </p>
+            <div class="flex justify-center gap-6 text-slate-400">
+                <a href="https://github.com/minghanbai" class="hover:text-slate-800 transition text-2xl" target="_blank" rel="noopener noreferrer" title="GitHub Profile">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
